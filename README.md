@@ -85,8 +85,7 @@ F1-Score: is the harmonic mean of precision and recall. The F1-score is 0.98 for
 
 Accuracy: The overall model accuracy is 98%, showing that the model correctly classifies most of the test instances.
 
-
-2. Confusion Matrix Analysis:
+### Confusion Matrix Analysis:
 The confusion matrix shows:
 
 True Positives (TP): 17017 instances were correctly predicted as not having Diabetes.
@@ -97,7 +96,7 @@ This indicates a fair performance, with all predictions being nearly correct.
 
 ![image](https://github.com/user-attachments/assets/8f89ff25-dfbe-4a66-9e76-4d1046df190f)
 
-Feature Importance
+### Feature Importance
 From the Random Forest Classifier which gave the best performance, the following features are considered most important:
 - Hemoglobin A1c level, indicating average blood sugar level
 - Blood Glucose level
