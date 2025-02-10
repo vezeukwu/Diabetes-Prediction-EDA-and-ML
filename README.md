@@ -105,6 +105,8 @@ From the Random Forest Classifier which gave the best performance, the following
 - BMI and 
 - Hypertension 
 
+![image](https://github.com/user-attachments/assets/f7e21b81-ff13-4aa0-bfb2-c909c24fce17)
+
 
 ## Conclusion
 The evaluation of the models demonstrates that the model is highly accurate (98%), with very few false positives and false negatives. The confusion matrix further confirms the robustness of the models, strong precision and recall, meaning it correctly identifies and captures relevant instances with minimal errors. The model took 43 seconds to train, indicating reasonable training efficiency.
