@@ -6,9 +6,11 @@
 Stark Health Clinic aims to develop a robust diabetes prediction model to accurately identify individuals at risk of developing diabetes allowing for timely and targeted preventive measures.
 
 ## Project Description:
-Stark Health Clinic is a private owned hospital located in Lagos, Nigeria. It was founded in 1972 by an astute medical professional. The hospital provides a wide range of medical services, including but not limited to general medicine, surgery, pediatrics, obstetrics and gynecology. The Hospital is known for its state-of-the-art facilities, modern equipment, and highly skilled medical professionals. It was then observed that an increasing number of patients presented themselves with complains including chest pains, blood pressure related issues, cholesterol level declines and stroke in some cases, hence an inquiry into the possibility of patients being at risk of a heart disease.
+Stark Health Clinic is a leading healthcare provider that leverages technology and predictive modeling to enhance its operations. By integrating machine learning into its systems, the clinic identifies diseases early, improving patient outcomes and resource allocation. By accurately predicting the risk of diabetes through advanced machine learning, Stark Health Clinic can improve patient care, reduce long-term costs, and take a proactive role in combating diabetes. 
 
-This project focuses on exploring and analyzing a diabetes dataset, using exploratory data analysis (EDA) and machine learning techniques to predict the likelihood of diabetes in individuals. The primary goal is to uncover key patterns and relationships within the data that can assist in identifying at-risk patients. Through Exploratory Data Analysis, I gained insights into factors such as age, blood sugar level, hypertension, and other clinical attributes. I then applied machine learning algorithms, to predict the probability of a patient having a diabetes, aiming to improve early detection and inform better clinical decision-making.
+With an intention to develop a robust diabetes prediction model to accurately identify individuals at risk of developing diabetes, the goal is to predict the likelihood of diabetes early enough, allowing for timely and targeted preventive measures.
+This initiative will empower Stark Health to enhance patient outcomes, reduce the burden on healthcare resources, and play a proactive role in combating diabetes.
+
 
 ## Dataset Description
 Source: Collected data from approximately 100,000 medical patients evaluated for diabetes.
@@ -70,9 +72,10 @@ Gender shows negligible correlation with most features, indicating no strong ass
 
 
 
-Model Building: The data was split into training and testing sets, with 80% of the data used for training the model and 20% for testing. This provided an unbiased evaluation of the model’s performance. I reviewed logistic regression and further examined other machine algorithms to determine the model with optimal effectiveness in other to reduce issues arising from false predictions as human lives are involved and the project essence is to achieve early detection and avoid needless deaths.
+## Model Building And Evaluation
+The data was split into training and testing sets, with 80% of the data used for training the model and 20% for testing. This provided an unbiased evaluation of the model’s performance. I reviewed logistic regression and further examined other machine algorithms to determine the model with optimal effectiveness in other to reduce issues arising from false predictions as human lives are involved and the project essence is to achieve early detection and avoid needless deaths.
 
-Model Evaluation: The Random Forest Classifier has better performance of 98% accross all metrics with False prediction of patients with and without diabetes as 411 and 422 respectively. Based on the displayed results, here’s an evaluation of the model’s performance:
+The Random Forest Classifier has better performance of 98% accross all metrics with False prediction of patients with and without diabetes as 411 and 422 respectively. Based on the displayed results, here’s an evaluation of the model’s performance:
 
 Precision: This measures how many of the predicted positive cases were actually positive. Both classes (0 and 1) have a precision of 0.98, meaning that 98% of the positive predictions were correct.
 
@@ -94,9 +97,17 @@ This indicates a fair performance, with all predictions being nearly correct.
 
 ![image](https://github.com/user-attachments/assets/8f89ff25-dfbe-4a66-9e76-4d1046df190f)
 
+Feature Importance
+From the Random Forest Classifier which gave the best performance, the following features are considered most important:
+- Hemoglobin A1c level, indicating average blood sugar level
+- Blood Glucose level
+- Age
+- BMI and 
+- Hypertension 
+
 
 ## Conclusion
 The evaluation of the models demonstrates that the model is highly accurate (98%), with very few false positives and false negatives. The confusion matrix further confirms the robustness of the models, strong precision and recall, meaning it correctly identifies and captures relevant instances with minimal errors. The model took 43 seconds to train, indicating reasonable training efficiency.
 
-This Random Forest model is well-optimized for the classification task, providing high reliability in predicting outcomes. However, if further improvements are needed, fine-tuning hyperparameters might be explored.
+This Random Forest model is well-optimized for the classification task, providing high reliability in predicting outcomes.
 
