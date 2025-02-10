@@ -41,13 +41,6 @@ blood_glucose_level - Current blood glucose level of the individual.
 diabetes - Target variable indicating whether the individual has diabetes (0 = No, 1 = Yes).
 
 ## Data Preparation (EDA)
-Loading the Data
-Data Cleaning
-Handling Missing Data
-Model Building and Predictions
-Summarizing and Visualization
-Model Evaluation Summary
-
 Data Cleaning and Transformation: I checked for missing values and data inconsistencies in the dataset, standardizing data to maintain model integrity. Some outliers were noted especially in the continuous variables. Most of the continuous variables (HbA1c Level, Blood Glucose Level, BMI, age) are slightly right-skewed, while majority of the categorical variables (Gender, Hypertension, Heart Disease, and Diabetes) are highly imbalanced, meaning one category dominates. This does not indicate skewness but rather class imbalance.
 And in addressing the data imbalance certain weights were assigned to balance the data for optimal result.
 
@@ -88,10 +81,10 @@ Accuracy: The overall model accuracy is 98%, showing that the model correctly cl
 ### Confusion Matrix Analysis:
 The confusion matrix shows:
 
-True Positives (TP): 17017 instances were correctly predicted as not having Diabetes.
-True Negatives (TN): 17216 instances were correctly predicted as having Diabetes.
-False Positives (FP): 422 instances were incorrectly predicted as not having diabetes.
-False Negatives (FN): 411 instances were incorrectly predicted as having diabetes.
+- True Positives (TP): 17017 instances were correctly predicted as not having Diabetes.
+- True Negatives (TN): 17216 instances were correctly predicted as having Diabetes.
+- False Positives (FP): 422 instances were incorrectly predicted as not having diabetes.
+- False Negatives (FN): 411 instances were incorrectly predicted as having diabetes.
 This indicates a fair performance, with all predictions being nearly correct.
 
 ![image](https://github.com/user-attachments/assets/8f89ff25-dfbe-4a66-9e76-4d1046df190f)
